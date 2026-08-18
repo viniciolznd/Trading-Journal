@@ -1,4 +1,4 @@
-# My Journal
+# My Journal — v1.1
 
 Personal MNQ trading journal built for GitHub Pages + Supabase.
 
@@ -23,3 +23,10 @@ Settings → Pages → Build and deployment → Deploy from a branch → main / 
 
 ## Important
 The Supabase publishable key is intentionally used in the frontend. Do not add a Supabase secret key, service_role key, database password or Postgres connection string to this repository.
+
+## v1.1
+- WIN is always stored/displayed as a positive P&L.
+- LOSS is always stored/displayed as a negative P&L.
+- BE is always stored/displayed as $0.
+- Existing LOSS trades that were entered as positive values display correctly immediately.
+- Editing and saving an older LOSS trade corrects its stored value in Supabase.
